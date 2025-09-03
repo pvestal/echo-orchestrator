@@ -136,12 +136,30 @@ celerybeat.pid
 
 # Environments
 .env
+.env.*
 .venv
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Sensitive configuration files
+config.yaml
+config.json
+secrets/
+credentials/
+*.key
+*.pem
+api_keys.txt
+
+# Tower specific files
+echo_vault_credentials
+consolidated_credentials.py
+tower_media_encryption.py
+update_oauth_credentials.py
+.tower_*
+*_credentials.json
 
 # Spyder project settings
 .spyderproject
